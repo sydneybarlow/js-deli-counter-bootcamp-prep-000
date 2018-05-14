@@ -1,8 +1,8 @@
 var katzDeli = [];
 
 function takeANumber(katzDeliLine, personsName) {
-  katzDeliLine.push(personsName)
-  return `Welcome, ${personsName}. You are number ${katzDeliLine.length} in line.`
+  katzDeliLine.push()
+  return `You are number ${katzDeliLine.length} in line.`
 }
 
 function nowServing(katzDeliLine) {
@@ -25,8 +25,8 @@ function currentLine(katzDeliLine) {
       lineList.push(` ${index+1}. ${name}`) 
     })
     // lineList = ["1. Sydney", "2. Bob"]
-    return "The line is currently:"+ lineList
-    // "The line list is currently: ["1. Sydney", "2. Bob"]"
+    return "The line is currently:"+ lineList.join("")
+    // "The line list is currently: 1. Sydney, 2. Bob"
   }
 }
 
